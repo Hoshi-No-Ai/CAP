@@ -1,0 +1,347 @@
+{
+  "source": "/home/pc/CoRL2026/video/video.mp4",
+  "clips": [
+    {
+      "name": "hero",
+      "start_seconds": 0,
+      "duration_seconds": 12.6,
+      "width": 1280
+    }
+  ],
+  "note": "Gallery uses selected raw footage and excerpts from the complete video. All five perception-failure demonstrations include Raw depth / WM reconstruction overlays. Four use existing synchronized overlays from the complete demonstration; stairs partial occlusion is composed from source-log-matched recordings with an approximate 5.6-second visual alignment. Source files are untouched and playback speed is preserved. Full video is hosted on YouTube.",
+  "youtube": "https://youtu.be/GE_GassSkYM",
+  "gallery": [
+    {
+      "id": "clip-01",
+      "source": "/home/pc/CoRL2026/video/video.mp4",
+      "category": "室内/上下楼梯/感知完全遮挡/good",
+      "duration": 175.104,
+      "width": 2560,
+      "height": 1440,
+      "start_seconds": 53,
+      "end_seconds": 62.5,
+      "poster_seconds": 59,
+      "title": "Stairs · full cover",
+      "condition": "Camera covered",
+      "portrait": false,
+      "duration_seconds": 9.5,
+      "raw_footage_source": "/home/pc/CoRL2026/video/室内/上下楼梯/感知完全遮挡/good/dji_mimo_20260427_113536_0_1777270371277_video.mp4",
+      "depth_visualization": "Raw depth and WM reconstruction overlays already synchronized in the complete demonstration.",
+      "web_width": 1920,
+      "web_height": 1080
+    },
+    {
+      "id": "clip-02",
+      "source": "/home/pc/CoRL2026/video/室内/上下楼梯/感知正常/good/dji_mimo_20260427_112814_0_1777270297061_video.mp4",
+      "category": "室内/上下楼梯/感知正常/good",
+      "duration": 25.9259,
+      "width": 3840,
+      "height": 2160,
+      "start_seconds": 5,
+      "end_seconds": 25.8,
+      "poster_seconds": 11,
+      "title": "Stairs · trial 1",
+      "condition": "Clean perception",
+      "portrait": false,
+      "duration_seconds": 20.8
+    },
+    {
+      "id": "clip-03",
+      "source": "/home/pc/CoRL2026/video/室内/上下楼梯/感知正常/good/dji_mimo_20260427_112950_0_1777270323170_video.mp4",
+      "category": "室内/上下楼梯/感知正常/good",
+      "duration": 28.9289,
+      "width": 3840,
+      "height": 2160,
+      "start_seconds": 12,
+      "end_seconds": 28.8,
+      "poster_seconds": 23,
+      "title": "Stairs · trial 2",
+      "condition": "Clean perception",
+      "portrait": false,
+      "duration_seconds": 16.8
+    },
+    {
+      "id": "clip-04",
+      "source": "/home/pc/CoRL2026/video/室内/上下楼梯/感知部分遮挡/good/dji_mimo_20260427_114436_0_1777270466183_video.mp4",
+      "category": "室内/上下楼梯/感知部分遮挡/good",
+      "duration": 35.754667,
+      "width": 3840,
+      "height": 2160,
+      "start_seconds": 20.4,
+      "end_seconds": 35.7,
+      "poster_seconds": 26.0,
+      "title": "Stairs · partial occlusion",
+      "condition": "Partial camera cover",
+      "portrait": false,
+      "duration_seconds": 15.3,
+      "web_width": 1920,
+      "web_height": 1080,
+      "depth_visualization": "Raw depth top left and WM reconstruction top right; visually aligned to robot motion.",
+      "depth_alignment": {
+        "raw_source": "/home/pc/JIN/HIMLoco/wm_recon_record/wm_output/stair/partial_occlusion/jet/wm_record_20260427_114301_noisy_jet.mp4",
+        "reconstruction_source": "/home/pc/JIN/HIMLoco/wm_recon_record/wm_output/stair/partial_occlusion/jet/wm_record_20260427_114301_recon_jet.mp4",
+        "pairing_evidence": "/home/pc/JIN/HIMLoco/wm_recon_record/wm_output/stair/log.txt",
+        "depth_start_seconds": 14.8,
+        "depth_end_seconds": 30.1,
+        "mapping": "depth_video_time = robot_video_time - 5.6 seconds",
+        "offset_seconds": 5.6,
+        "method": "Manual visual alignment of initial body motion (~robot 21.4 s / depth 15.8 s), checked against stair approach (~24 / 18.4), platform traversal (~26 / 20.4 and 28 / 22.4), and descent (~30 / 24.4 and 32 / 26.4).",
+        "precision_note": "Approximate visual synchronization; depth video is 10 fps. Not hardware timestamp synchronization. No speed adjustment.",
+        "standalone_export": "/home/pc/CoRL2026/video/site-edits/stairs-partial-wm.mp4"
+      },
+      "depth_label_style": {
+        "font": "Liberation Sans Bold (Arial-compatible)",
+        "size_px_at_1080p": 54,
+        "color": "black",
+        "background": "none",
+        "alignment": "Centered near bottom of each 384 × 288 depth inset, matching the other demonstration labels."
+      }
+    },
+    {
+      "id": "clip-05",
+      "source": "/home/pc/CoRL2026/video/video.mp4",
+      "category": "室内/混合地形/前半部分遮挡后半部分不遮挡/good",
+      "duration": 175.104,
+      "width": 2560,
+      "height": 1440,
+      "start_seconds": 17,
+      "end_seconds": 29.5,
+      "poster_seconds": 21,
+      "title": "Mixed terrain · cover and uncover",
+      "condition": "Perception loss and recovery",
+      "portrait": false,
+      "duration_seconds": 12.5,
+      "raw_footage_source": "/home/pc/CoRL2026/video/室内/混合地形/前半部分遮挡后半部分不遮挡/good/dji_mimo_20260427_183200_0_1777533310717_video.mp4",
+      "depth_visualization": "Raw depth and WM reconstruction overlays already synchronized in the complete demonstration.",
+      "web_width": 1920,
+      "web_height": 1080
+    },
+    {
+      "id": "clip-06",
+      "source": "/home/pc/CoRL2026/video/室内/混合地形/感知正常/good/dji_mimo_20260427_154858_0_1777533194953_video.mp4",
+      "category": "室内/混合地形/感知正常/good",
+      "duration": 15.365367,
+      "width": 3840,
+      "height": 2160,
+      "start_seconds": 1,
+      "end_seconds": 12.8,
+      "poster_seconds": 6,
+      "title": "Mixed terrain · trial 1",
+      "condition": "Clean perception",
+      "portrait": false,
+      "duration_seconds": 11.8
+    },
+    {
+      "id": "clip-07",
+      "source": "/home/pc/CoRL2026/video/室内/混合地形/感知正常/good/dji_mimo_20260427_155158_0_1777533236935_video.mp4",
+      "category": "室内/混合地形/感知正常/good",
+      "duration": 27.5275,
+      "width": 3840,
+      "height": 2160,
+      "start_seconds": 15,
+      "end_seconds": 27.4,
+      "poster_seconds": 23,
+      "title": "Mixed terrain · trial 2",
+      "condition": "Clean perception",
+      "portrait": false,
+      "duration_seconds": 12.4
+    },
+    {
+      "id": "clip-08",
+      "source": "/home/pc/CoRL2026/video/室内/混合地形/感知正常/good/dji_mimo_20260427_155308_0_1777533243353_video.mp4",
+      "category": "室内/混合地形/感知正常/good",
+      "duration": 13.079733,
+      "width": 3840,
+      "height": 2160,
+      "start_seconds": 0,
+      "end_seconds": 13.0,
+      "poster_seconds": 6,
+      "title": "Mixed terrain · trial 3",
+      "condition": "Clean perception",
+      "portrait": false,
+      "duration_seconds": 13.0
+    },
+    {
+      "id": "clip-09",
+      "source": "/home/pc/CoRL2026/video/video.mp4",
+      "category": "室内/混合地形/感知部分遮挡/good",
+      "duration": 175.104,
+      "width": 2560,
+      "height": 1440,
+      "start_seconds": 30,
+      "end_seconds": 41.5,
+      "poster_seconds": 35,
+      "title": "Mixed terrain · partial occlusion",
+      "condition": "Partial camera cover",
+      "portrait": false,
+      "duration_seconds": 11.5,
+      "raw_footage_source": "/home/pc/CoRL2026/video/室内/混合地形/感知部分遮挡/good/dji_mimo_20260427_155952_0_1777533268513_video.mp4",
+      "depth_visualization": "Raw depth and WM reconstruction overlays already synchronized in the complete demonstration.",
+      "web_width": 1920,
+      "web_height": 1080
+    },
+    {
+      "id": "clip-10",
+      "source": "/home/pc/CoRL2026/video/video.mp4",
+      "category": "室内/混合地形/闪光灯/good",
+      "duration": 175.104,
+      "width": 2560,
+      "height": 1440,
+      "start_seconds": 42,
+      "end_seconds": 52.5,
+      "poster_seconds": 46,
+      "title": "Mixed terrain · flash corruption",
+      "condition": "Real sensor artifacts",
+      "portrait": false,
+      "duration_seconds": 10.5,
+      "raw_footage_source": "/home/pc/CoRL2026/video/室内/混合地形/闪光灯/good/dji_mimo_20260427_201752_0_1777533336044_video.mp4",
+      "depth_visualization": "Raw depth and WM reconstruction overlays already synchronized in the complete demonstration.",
+      "web_width": 1920,
+      "web_height": 1080
+    },
+    {
+      "id": "clip-11",
+      "source": "/home/pc/CoRL2026/video/室外/草地斜坡/dji_mimo_20260518_103742_0_1779093558204_video.mp4",
+      "category": "室外/草地斜坡",
+      "duration": 147.050667,
+      "width": 3840,
+      "height": 2160,
+      "start_seconds": 0,
+      "end_seconds": 42,
+      "poster_seconds": 20,
+      "title": "Grass & slopes",
+      "condition": "Grass slope",
+      "portrait": false,
+      "duration_seconds": 42
+    },
+    {
+      "id": "clip-12",
+      "source": "/home/pc/CoRL2026/video/室外/长楼梯/WeChat_20260519023723.mp4",
+      "category": "室外/长楼梯",
+      "duration": 34.833333,
+      "width": 3840,
+      "height": 2160,
+      "start_seconds": 0,
+      "end_seconds": 34.833333,
+      "poster_seconds": 12,
+      "title": "Long stairs · side view",
+      "condition": "Long staircase",
+      "portrait": false,
+      "duration_seconds": 34.83
+    },
+    {
+      "id": "clip-15",
+      "source": "/home/pc/CoRL2026/video/室外/高台/dji_mimo_20260518_123440_0_1779093112077_video.mp4",
+      "category": "室外/高台",
+      "duration": 39.808,
+      "width": 3840,
+      "height": 2160,
+      "start_seconds": 0,
+      "end_seconds": 39.808,
+      "poster_seconds": 8,
+      "title": "Outdoor platform",
+      "condition": "High platform",
+      "portrait": false,
+      "duration_seconds": 39.81
+    },
+    {
+      "id": "clip-16",
+      "source": "/home/pc/CoRL2026/video/室外/楼梯其他/dji_mimo_20260518_112606_0_1779093367498_video.mp4",
+      "category": "室外/楼梯其他",
+      "duration": 18.585233,
+      "width": 3840,
+      "height": 2160,
+      "start_seconds": 0,
+      "end_seconds": 18.585233,
+      "poster_seconds": 8,
+      "title": "Outdoor stairs · side view",
+      "condition": "Outdoor stairs",
+      "portrait": false,
+      "duration_seconds": 18.59
+    },
+    {
+      "id": "clip-19",
+      "source": "/home/pc/CoRL2026/video/室外/楼梯其他/dji_mimo_20260518_115042_0_1779093274224_video.mp4",
+      "category": "室外/楼梯其他",
+      "duration": 52.6526,
+      "width": 3840,
+      "height": 2160,
+      "start_seconds": 0,
+      "end_seconds": 52.6526,
+      "poster_seconds": 19,
+      "title": "Narrow outdoor stairs",
+      "condition": "Outdoor stairs",
+      "portrait": false,
+      "duration_seconds": 52.65
+    }
+  ],
+  "hero_teaser": {
+    "source": "/home/pc/CoRL2026/video/video.mp4",
+    "presentation": "Three real frames composed in HTML/CSS; clicking plays hero.mp4 in the same 16:9 area. No synthesized content.",
+    "frames": [
+      {
+        "asset": "teaser-covered.jpg",
+        "seconds": 3,
+        "crop": [
+          1760,
+          70,
+          800,
+          1350
+        ]
+      },
+      {
+        "asset": "teaser-restored.jpg",
+        "seconds": 5.5,
+        "crop": [
+          1470,
+          70,
+          800,
+          1350
+        ]
+      },
+      {
+        "asset": "teaser-crossing.jpg",
+        "seconds": 7,
+        "crop": [
+          850,
+          70,
+          800,
+          1350
+        ]
+      }
+    ],
+    "frame_output_size": [
+      640,
+      1080
+    ]
+  },
+  "paper_teaser": {
+    "source": "/home/pc/JIN/HIMLoco/paper/arxiv/figs/fig1_teaser.pdf",
+    "asset": "paper-teaser.webp",
+    "page": 1,
+    "width": 2400,
+    "height": 1148,
+    "note": "Complete original paper teaser rendered for the overview; no cropping or content changes. Separate from the three-frame hero video cover."
+  },
+  "abstract": {
+    "source": "/home/pc/JIN/HIMLoco/paper/arxiv/main.tex",
+    "selection": "Abstract from the camera-ready arXiv manuscript; LaTeX method macro rendered as CAP."
+  },
+  "paper": {
+    "source": "/home/pc/JIN/HIMLoco/paper/arxiv/main.pdf",
+    "asset": "paper.pdf",
+    "pages": 20,
+    "note": "Author-provided camera-ready arXiv manuscript, copied without modification."
+  },
+  "paper_figures": {
+    "framework.png": "/home/pc/JIN/HIMLoco/paper/arxiv/figs/fig2_framework.pdf",
+    "degradation.png": "/home/pc/JIN/HIMLoco/paper/arxiv/figs/fig4_degradation_sweep.pdf"
+  },
+  "arxiv": "https://arxiv.org/abs/2609.11553",
+  "institution_logos": {
+    "source_page": "https://hoshi-no-ai.github.io/Rhythm/",
+    "fudan-logo.png": "/home/pc/JIN/paper_webpage/Rhythm/src/assets/logo/fudan.png",
+    "tars-logo.svg": "/home/pc/JIN/paper_webpage/Rhythm/src/assets/logo/tars.svg",
+    "note": "Original institution marks reused without modification."
+  }
+}
